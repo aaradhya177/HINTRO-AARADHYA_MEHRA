@@ -55,7 +55,7 @@ lib/
 - Call descriptions use the API `description` field as the call title
 - Duration formatted as "Xm Ysec" to match Figma
 - Call Insights, Knowledge Base, Prompts, Boxy Controls are nav placeholders (out of scope)
-- Base URL: https://mock-backend-hintro.vercel.app/
+- Base URL: https://hintro-dashboard-ecru.vercel.app/dashboard
 
 ## API Endpoints Used
 | Endpoint | Header | Purpose |
