@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-sidebar-bg: #1a1a2e;
+    --color-sidebar-text: #a0a0b0;
+    --color-sidebar-active-bg: #2d2d4e;
+    --color-sidebar-active-text: #ffffff;
+    --color-main-bg: #ffffff;
+    --color-main-text: #1a1a1a;
+    --color-muted: #6b7280;
+    --color-border: #e5e7eb;
+    --color-accent-red: #ef4444;
+    --color-accent-teal: #14b8a6;
+    --color-accent-green: #22c55e;
+    --color-accent-purple: #a855f7;
+    --color-star: #facc15;
+    --color-card-bg: #f9fafb;
+    --color-upgrade-btn: #1a1a2e;
+    --font-sans: 'Inter', sans-serif;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    background: var(--color-main-bg);
+    color: var(--color-main-text);
+    font-family: var(--font-sans);
+    @apply antialiased;
+  }
+
+  @keyframes page-enter {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .page-enter {
+    animation: page-enter 300ms ease-out both;
+  }
+}
